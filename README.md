@@ -20,8 +20,8 @@ You will also need:
 DiscoTwit runs from its source code. In order to install DiscoTwit, you must run the following commands:
 
 ```
-git clone https://github.com/cycloptux/discotwit.git
-cd discotwit
+git clone https://github.com/cycloptux/DiscoTwit.git
+cd DiscoTwit
 npm ci --only=production
 ```
 
