@@ -106,7 +106,7 @@ We're done! Check the rest of the mandatory configuration parameters and start D
 1. Under "Authentication settings" click "Edit".
 2. Hit the toggle to "Enable 3-legged OAuth". Keep "Request email address from users" disabled.
 3. Under "Callback URLs (required)" put this string: `http://localhost`
-4. Under "Website URL (required)" put: `https://github.com/cycloptux/discotwit`
+4. Under "Website URL (required)" put: `https://github.com/cycloptux/DiscoTwit`
 5. Click on "Save".
 6. From the root of the DiscoTwit project, run `npm run auth` and follow the instructions shown in your console.
 7. After correctly setting the `TWITTER_OAUTH_TOKEN` and `TWITTER_OAUTH_VERIFIER` environment variables, start the bot with `npm start`.
@@ -146,8 +146,8 @@ DiscoTwit only has one command, `dt@help`, which shows basic info about the bot 
 
 ## Contributing
 
-1. [Fork the repository](https://github.com/cycloptux/discotwit/fork)
-2. Clone your fork: `git clone https://github.com/your-username/discotwit.git`
+1. [Fork the repository](https://github.com/cycloptux/DiscoTwit/fork)
+2. Clone your fork: `git clone https://github.com/your-username/DiscoTwit.git`
 3. Create your feature branch: `git checkout -b my-new-feature`
 4. Commit your changes: `git commit -am "Add some feature"`
 5. Push to the branch: `git push origin my-new-feature`
