@@ -1,10 +1,18 @@
 const config = require("../config/config");
 const logger = require("./winston");
+const { truncateText } = require("./helper");
 
 // Individual commands logic
 const _commandsLogic = {
     help: (message) => {
-        const response_text = "Test";
+        const response_text = truncateText("**DiscoTwit** is an **open source**, customizable **Discord-to-Twitter** integration bot whose goal is to tweet messages posted on Discord.\n"
+            + "You can find my source code here: https://github.com/cycloptux/DiscoTwit\n\n"
+            + "Here's my current configuration:\n"
+            + `- **Server ID:** \`${config.discordSettings.server_id}\`\n`
+            + `- **Channel ID:** \`${config.discordSettings.channel_id}\`\n`
+            + `- **User ID(s):** \`${config.discordSettings.user_ids.join(" ")}\`\n`
+            + `- **React on Success:** \`${Boolean(config.discordSettings.react_on_success)}\`\n`
+            + `- **Reaction Emoji:** \`${config.discordSettings.reaction_emoji}\`\n`, 2000);
         return message.channel.send(response_text);
     },
 };
