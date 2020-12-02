@@ -1,0 +1,29 @@
+{
+    "env": {
+        "es6": true,
+        "node": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 2020,
+        "sourceType": "module"
+    },
+    "extends": ["eslint:recommended", "airbnb"],
+    "plugins": ["prettier"],
+    "rules": {
+        "camelcase": "off",
+        "consistent-return": "off",
+        "indent": ["error", 4, { "SwitchCase": 1 }],
+        "linebreak-style": ["error", "unix"],
+        "max-len": ["error", { "code": 240 }],
+        "no-console": "warn",
+        "no-floating-decimal": "error",
+        "no-lonely-if": "error",
+        "no-multi-spaces": "error",
+        "no-param-reassign": "off",
+        "no-shadow": ["error", { "allow": ["err", "resolve", "reject"] }],
+        "no-underscore-dangle": "off",
+        "quotes": ["error", "double"],
+        "space-unary-ops": "error",
+        "yoda": "error"
+    }
+}
