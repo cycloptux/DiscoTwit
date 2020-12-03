@@ -63,14 +63,13 @@ Bot.on("message", async (message) => {
     // Ignore system messages, DMs and bots
     if (message.system) return;
     if (message.channel && message.channel.type === "dm") return;
-    if (message.author && message.author.bot) return;
 
-    // If the message is partial, try fetching it
-    if (message.partial || !message.author || (!message.content && message.content !== "")) message = await partialFetch(message);
+    // If the message is partial or incomplete, try fetching it
+    if (message.partial || !message.author) message = await partialFetch(message);
 
-    // Sometimes, author and channel are only present after re-fetching. Check again
-    if (!message.author || message.author.bot) return;
-    if (message.channel.type === "dm") return;
+    // Sometimes, author and channel are only present after re-fetching, or not present at all. Check again
+    if (!message.author) return;
+    if (!message.channel || message.channel.type === "dm") return;
 
     // Check if the message satisfies Twitter-related permissions, or return internally
     tweetHandler(message);

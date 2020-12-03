@@ -132,6 +132,9 @@ const tweetHandler = (message) => {
     if (message.channel.id !== config.discordSettings.channel_id) return;
     if (!config.discordSettings.user_ids.includes(message.author.id)) return;
 
+    // Ignore messages with no (clean) content
+    if (!message.cleanContent || !message.cleanContent.length || !message.cleanContent.trim().length) return;
+
     logger.info(`[Twitter] Processing a message from ${message.author.tag} (${message.author.id}), in Server ${message.guild.name} (${message.guild.id}), Channel #${message.channel.name} (${message.channel.id}), `
         + `Message ID [ ${message.id} ].`);
     return _postTweet(message.cleanContent).then((tweet_posted) => {

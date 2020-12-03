@@ -18,6 +18,12 @@ const _commandsLogic = {
 };
 
 const commandHandler = (message) => {
+    // Ignore messages from bots
+    if (message.author.bot) return;
+
+    // Ignore messages with no content
+    if (!message.content || !message.content.length || !message.content.trim().length) return;
+
     const botPrefix = config.generalSettings.bot_prefix;
     // Ignore any message that does not start with the prefix
     if (message.content.indexOf(botPrefix) !== 0) return;
