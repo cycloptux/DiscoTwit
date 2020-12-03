@@ -132,15 +132,15 @@ DiscoTwit only has one command, `dt@help`, which shows basic info about the bot 
 
 ## FAQ
 
-**Q:** I'm getting errors when DiscoTwit attempts connecting to Twitter!
+**Q: I'm getting errors when DiscoTwit attempts connecting to Twitter!**
 
 **A:** Your tokens might be expired or revoked. Try running the authentication steps again.
 
-**Q:** DiscoTwit is so slow at posting my messages!
+**Q: DiscoTwit is so slow at posting my messages!**
 
 **A:** The bot has an internal rate limiter to ensure that the pace at which tweets are posted does not exceed the imposed [rate limits](https://developer.twitter.com/en/docs/twitter-api/v1/tweets/post-and-engage/api-reference/post-statuses-update).
 
-**Q:** Server ID? Channel ID? What are these IDs you are talking about?
+**Q: Server ID? Channel ID? What are these IDs you are talking about?**
 
 **A:** Check [this guide](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-).
 
