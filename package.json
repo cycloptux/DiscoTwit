@@ -26,25 +26,25 @@
   "homepage": "https://github.com/cycloptux/DiscoTwit#readme",
   "dependencies": {
     "bottleneck": "^2.19.5",
-    "bufferutil": "^4.0.2",
+    "bufferutil": "^4.0.5",
     "discord.js": "^12.5.1",
-    "dotenv": "^8.2.0",
+    "dotenv": "^10.0.0",
     "erlpack": "github:discordapp/erlpack",
     "twitter-lite": "^0.14.0",
-    "utf-8-validate": "^5.0.3",
+    "utf-8-validate": "^5.0.7",
     "winston": "^3.3.3",
-    "winston-daily-rotate-file": "^4.5.0",
+    "winston-daily-rotate-file": "^4.5.5",
     "zlib-sync": "^0.1.7"
   },
   "devDependencies": {
-    "eslint": "^7.14.0",
+    "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
-    "eslint-config-prettier": "^6.15.0",
-    "eslint-plugin-import": "^2.22.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-react": "^7.21.5",
-    "eslint-plugin-react-hooks": "^4.1.2",
-    "prettier": "^2.2.1"
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.26.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.4.1"
   }
 }
